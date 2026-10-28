@@ -1,0 +1,6 @@
+{
+  "name": "Mera AI",
+  "description": "एक आधुनिक, शक्तिशाली और मोबाइल-फ्रेंडली AI चैट साथी (Hindi, Hinglish & English AI Assistant)",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

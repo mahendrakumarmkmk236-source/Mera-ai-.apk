@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Mera AI</string>
+    <string name="tagline">आपका अपना AI साथी</string>
+    <string name="send_message">भेजें</string>
+    <string name="type_placeholder">Mera AI से कुछ भी पूछें (हिंदी, Hinglish या English)...</string>
+    <string name="offline_badge">ऑफ़लाइन लोकल AI</string>
+    <string name="online_badge">ऑनलाइन (Gemini)</string>
+</resources>

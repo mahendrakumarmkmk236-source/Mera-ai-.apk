@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="bgGradMask" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a122c"/>
+      <stop offset="50%" stop-color="#050a18"/>
+      <stop offset="100%" stop-color="#020409"/>
+    </linearGradient>
+    <linearGradient id="primaryGradMask" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="50%" stop-color="#3b82f6"/>
+      <stop offset="100%" stop-color="#6366f1"/>
+    </linearGradient>
+    <linearGradient id="accentGradMask" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fbbf24"/>
+      <stop offset="100%" stop-color="#f59e0b"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Full-bleed background for maskable icon -->
+  <rect width="512" height="512" fill="url(#bgGradMask)"/>
+
+  <!-- Centered inside safe zone (padded within central 75%) -->
+  <g transform="translate(64, 64) scale(0.75)">
+    <!-- Concentric glow rings -->
+    <circle cx="256" cy="256" r="170" fill="none" stroke="#1e293b" stroke-width="3" stroke-dasharray="10 10" opacity="0.6"/>
+    <circle cx="256" cy="256" r="130" fill="none" stroke="#2563eb" stroke-width="3" opacity="0.4"/>
+
+    <!-- Central lotus petals / AI nodes -->
+    <path d="M 256 120 C 275 180 330 230 380 256 C 330 282 275 332 256 392 C 237 332 182 282 132 256 C 182 230 237 180 256 120 Z" fill="url(#primaryGradMask)" opacity="0.95"/>
+    <!-- Inner golden star / spark -->
+    <path d="M 256 180 C 266 220 296 246 332 256 C 296 266 266 292 256 332 C 246 292 216 266 180 256 C 216 246 246 220 256 180 Z" fill="url(#accentGradMask)"/>
+    <circle cx="256" cy="256" r="20" fill="#ffffff"/>
+
+    <!-- Satellite Nodes -->
+    <circle cx="160" cy="180" r="12" fill="#38bdf8"/>
+    <circle cx="352" cy="180" r="12" fill="#38bdf8"/>
+    <circle cx="160" cy="332" r="12" fill="#6366f1"/>
+    <circle cx="352" cy="332" r="12" fill="#6366f1"/>
+    <line x1="160" y1="180" x2="220" y2="230" stroke="#38bdf8" stroke-width="4" opacity="0.5"/>
+    <line x1="352" y1="180" x2="292" y2="230" stroke="#38bdf8" stroke-width="4" opacity="0.5"/>
+    <line x1="160" y1="332" x2="220" y2="282" stroke="#6366f1" stroke-width="4" opacity="0.5"/>
+    <line x1="352" y1="332" x2="292" y2="282" stroke="#6366f1" stroke-width="4" opacity="0.5"/>
+
+    <text x="256" y="445" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="36" font-weight="800" fill="#f8fafc" text-anchor="middle" letter-spacing="4">MERA AI</text>
+  </g>
+</svg>

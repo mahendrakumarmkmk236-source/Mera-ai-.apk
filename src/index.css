@@ -1,0 +1,121 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-sans: 'Plus Jakarta Sans', 'Noto Sans Devanagari', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    --font-mono: 'JetBrains Mono', monospace;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+/* Custom discreet scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(148, 163, 184, 0.2);
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(148, 163, 184, 0.4);
+}
+
+/* Safe area support for notched phones */
+.pb-safe {
+  padding-bottom: env(safe-area-inset-bottom, 16px);
+}
+
+.pt-safe {
+  padding-top: env(safe-area-inset-top, 0px);
+}
+
+/* Markdown prose refinements for chat bubbles */
+.prose-chat {
+  font-size: 0.95rem;
+  line-height: 1.65;
+  color: inherit;
+}
+
+.prose-chat p {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.prose-chat p:first-child {
+  margin-top: 0;
+}
+
+.prose-chat p:last-child {
+  margin-bottom: 0;
+}
+
+.prose-chat ul, .prose-chat ol {
+  margin-top: 0.4rem;
+  margin-bottom: 0.4rem;
+  padding-left: 1.3rem;
+}
+
+.prose-chat li {
+  margin-top: 0.25rem;
+  margin-bottom: 0.25rem;
+}
+
+.prose-chat strong {
+  font-weight: 600;
+  color: #f8fafc;
+}
+
+.prose-chat code:not(pre code) {
+  padding: 0.15rem 0.35rem;
+  font-family: var(--font-mono);
+  font-size: 0.85em;
+  background-color: rgba(148, 163, 184, 0.15);
+  border-radius: 0.25rem;
+  color: #fbbf24;
+}
+
+.prose-chat pre {
+  margin: 0.75rem 0;
+  border-radius: 0.6rem;
+  background-color: #030712;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  overflow-x: auto;
+}
+
+.prose-chat table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0.75rem 0;
+  font-size: 0.88rem;
+}
+
+.prose-chat th, .prose-chat td {
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  padding: 0.4rem 0.75rem;
+  text-align: left;
+}
+
+.prose-chat th {
+  background: rgba(255, 255, 255, 0.05);
+  font-weight: 600;
+}
+
+.prose-chat blockquote {
+  border-left: 3px solid rgba(245, 158, 11, 0.6);
+  padding-left: 0.75rem;
+  margin: 0.6rem 0;
+  font-style: italic;
+  color: #cbd5e1;
+}
